@@ -1,4 +1,6 @@
-﻿internal class Program
+﻿using System;
+
+internal class Program
 {
     public static void Main(string[] args)
     {
@@ -40,13 +42,21 @@
         //Promedio de ventas
         Double TotalVentas = venta1 + venta2 + venta3;
         double promediodeventas = TotalVentas / 3;
-         Console.Write("El promedio por las tres ventas fue de " + promediodeventas.ToString("##,#0"));Console.WriteLine();
-        
+        Console.Write("El promedio por las tres ventas fue de " + promediodeventas.ToString("##,#0")); Console.WriteLine();
+
         // Verifica si el vendedor supera el objetivo para recibir el beneficio extra
         Boolean superaObjetivo = (venta1 + venta2 + venta3) > 1000000;
         double beneficioExtra = superaObjetivo ? 100000 : 0;
 
-        
+        // Muestra si se ganó el beneficio extra
+        if (superaObjetivo)
+        {
+            Console.WriteLine("Felicidades! Ganó el beneficio extra de $100,000.");
+        }
+        else
+        {
+            Console.WriteLine("No ganó el beneficio extra.");
+        }
     }
 
 }
