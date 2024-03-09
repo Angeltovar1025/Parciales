@@ -48,7 +48,7 @@ internal class Program
         Boolean superaObjetivo = (venta1 + venta2 + venta3) > 1000000;
         double beneficioExtra = superaObjetivo ? 100000 : 0;
 
-        // Muestra si se ganó el beneficio extra
+        // Ganó o no el beneficio extra
         if (superaObjetivo)
         {
             Console.WriteLine("Felicidades! Ganó el beneficio extra de $100,000.");
