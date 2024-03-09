@@ -6,17 +6,16 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-
+        //Datos primer tren
         // Hora de salida del primer tren en formato de 24 horas
         double horaSalidaTren1 = 10;
         // Velocidad del tren #1 km/h
         double velocidadTren1 = 80;
 
+        //Datos primer tren
         // Velocidad del tren #2 km/h
         int velocidadTren2 = 100;
-
-
-        // Hora de salida del segundo tren en formato de 24 horas
+         // Hora de salida del segundo tren en formato de 24 horas
         int horaSalidaTren2 = 11;
 
         // Calcula la hora en que el segundo tren alcanzará al primer tren
